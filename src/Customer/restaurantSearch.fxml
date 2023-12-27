@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customer.RestaurantSearchController">
+   <children>
+      <MenuButton fx:id="searchOptions" contentDisplay="BOTTOM" layoutX="16.0" layoutY="79.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: #000000;" stylesheets="@../CSS/buttons3.css" text="Search Options" textFill="WHITE">
+        <items>
+          <MenuItem fx:id="nameOption" mnemonicParsing="false" onAction="#searchByNameShow" text="Name" />
+          <MenuItem fx:id="scoreOption" mnemonicParsing="false" onAction="#searchByScoreShow" text="Score" />
+          <MenuItem fx:id="categoryOption" mnemonicParsing="false" onAction="#searchByCategoryShow" text="Category" />
+          <MenuItem fx:id="priceOption" mnemonicParsing="false" onAction="#searchByPriceShow" text="Price" />
+          <MenuItem fx:id="zipCodeOption" mnemonicParsing="false" onAction="#searchByZipCodeShow" text="Zip Code" />
+          <MenuItem fx:id="categoryWise" mnemonicParsing="false" onAction="#categoryWiseShow" text="Different Category Wise List of Restaurants" />
+        </items>
+         <font>
+            <Font name="Yu Gothic Bold" size="14.0" />
+         </font>
+      </MenuButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="30.0" layoutX="-4.0" layoutY="413.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.0" width="243.0" />
+      <TextField fx:id="textField1" accessibleRole="TEXT_FIELD" layoutX="16.0" layoutY="164.0" prefHeight="25.0" prefWidth="200.0" promptText="Enter Name" visible="false" />
+      <TextField fx:id="textField2" accessibleRole="TEXT_FIELD" layoutX="16.0" layoutY="126.0" prefHeight="27.0" prefWidth="200.0" promptText="Enter Name" visible="false" />
+      <ButtonBar fx:id="buttonBar" layoutX="41.0" layoutY="189.0" prefHeight="56.0" prefWidth="163.0" visible="false">
+        <buttons>
+          <Button fx:id="reset" minWidth="25.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="27.0" style="-fx-background-color: #000000;" stylesheets="@../CSS/buttons3.css" text="Reset" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="submit" minWidth="46.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="27.0" style="-fx-background-color: #000000;" stylesheets="@../CSS/buttons3.css" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+        </buttons>
+      </ButtonBar>
+      <Label fx:id="result" layoutX="16.0" layoutY="412.0" prefHeight="25.0" prefWidth="211.0" text="Result   " visible="false">
+         <font>
+            <Font name="Franklin Gothic Demi" size="18.0" />
+         </font></Label>
+      <ImageView fx:id="backArrow" fitHeight="41.0" fitWidth="34.0" layoutX="14.0" layoutY="21.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="238.0" prefHeight="475.0" prefWidth="381.0" style="-fx-background-color: #D70F64;">
+         <children>
+            <ScrollPane layoutX="38.0" layoutY="24.0" pannable="true" prefHeight="414.0" prefWidth="305.0">
+               <content>
+                  <VBox fx:id="restaurantVbox" prefHeight="400.0" prefWidth="340.0" style="-fx-background-color: #ffffff;" />
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+      <ImageView fitHeight="185.0" fitWidth="226.0" layoutX="3.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@paupauSearch2.png" />
+         </image>
+      </ImageView>
+      
+   </children>
+</AnchorPane>

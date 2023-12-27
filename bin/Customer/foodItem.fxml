@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customer.foodItemController">
+   <children>
+      <HBox prefHeight="35.0" prefWidth="355.0" style="-fx-background-color: #D70F64;">
+         <children>
+            <Label fx:id="Food" prefHeight="31.0" prefWidth="339.0" style="-fx-background-color: #000000;" text="Food" textFill="#d70f64">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="35.0" prefWidth="355.0">
+         <children>
+            <Label fx:id="Price" prefHeight="31.0" prefWidth="103.0" text="Price">
+               <font>
+                  <Font name="Calibri Light" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="resName" prefHeight="31.0" prefWidth="177.0" text="Res. Name">
+               <font>
+                  <Font name="Calibri Light" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="resID" prefHeight="31.0" prefWidth="83.0" text="Res. ID">
+               <font>
+                  <Font name="Calibri Light" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="35.0" prefWidth="355.0">
+         <children>
+            <Label fx:id="Category" prefHeight="31.0" prefWidth="302.0" text="Category">
+               <font>
+                  <Font name="Calibri Light" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="6.0" stroke="BLACK" strokeType="INSIDE" width="305.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9764705896377563" green="0.16470588743686676" blue="0.5098039507865906" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+   </children>
+</VBox>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="70.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Restaurant.FoodItemController">
+   <children>
+      <HBox prefHeight="40.0" prefWidth="465.0">
+         <children>
+            <Label fx:id="name" prefHeight="39.0" prefWidth="465.0" style="-fx-background-color: #000000;" text="Name" textFill="#d70f64">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="20.0" prefWidth="465.0">
+         <children>
+            <Label fx:id="price" prefHeight="20.0" prefWidth="465.0" text="Price">
+               <font>
+                  <Font name="Calibri Light" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="20.0" prefWidth="465.0" />
+      <Label fx:id="category" prefHeight="20.0" prefWidth="465.0" text="Category">
+         <font>
+            <Font name="Calibri Light" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>
