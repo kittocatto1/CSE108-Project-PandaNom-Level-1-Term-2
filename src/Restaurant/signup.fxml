@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Restaurant.SignupController">
+   <children>
+      <Label layoutX="325.0" layoutY="30.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="350.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="415.0" layoutY="30.0" promptText="***" style="-fx-background-color: #fae6f2;" />
+      <PasswordField fx:id="password" layoutX="415.0" layoutY="350.0" style="-fx-background-color: #fae6f2;" />
+      <ButtonBar layoutX="365.0" layoutY="386.0" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetAction" style="-fx-background-color: #D70F64;" text="Reset">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="signupButton" mnemonicParsing="false" onAction="#signupAction" style="-fx-background-color: #D70F64;" text="Sign Up">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </buttons>
+      </ButtonBar>
+      <AnchorPane layoutY="16.0" prefHeight="378.0" prefWidth="238.0" style="-fx-background-color: #D70F64;">
+         <children>
+            <ImageView fitHeight="360.0" fitWidth="321.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@paupau3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="39.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goLogin" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="warning" layoutX="67.0" layoutY="20.0" style="-fx-background-color: #000000;" text="Enter the *** fields!" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Yu Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="id" layoutX="415.0" layoutY="70.0" promptText="*** An integer" style="-fx-background-color: #fae6f2;" />
+      <TextField fx:id="score" layoutX="415.0" layoutY="110.0" promptText="***Any number from 1-5" style="-fx-background-color: #fae6f2;" />
+      <TextField fx:id="price" layoutX="415.0" layoutY="150.0" promptText="***$,$$ or $$$" style="-fx-background-color: #fae6f2;" />
+      <TextField fx:id="zipcode" layoutX="415.0" layoutY="190.0" promptText="***" style="-fx-background-color: #fae6f2;" />
+      <TextField fx:id="category1" layoutX="415.0" layoutY="230.0" promptText="***" style="-fx-background-color: #fae6f2;" />
+      <TextField fx:id="category2" layoutX="415.0" layoutY="270.0" style="-fx-background-color: #fae6f2;" />
+      <Label layoutX="325.0" layoutY="70.0" text="ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="110.0" text="Score" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="150.0" text="Price" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="190.0" text="ZipCode" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="230.0" text="Category (1)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="270.0" text="Category(2)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="category3" layoutX="415.0" layoutY="310.0" style="-fx-background-color: #fae6f2;" />
+      <Label layoutX="325.0" layoutY="310.0" text="Category(3)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,7 @@
+
+.button:hover{     
+    -fx-text-fill:#D70F64
+   }
+.menu-button:hover {
+    -fx-text-fill: #D70F64;
+}

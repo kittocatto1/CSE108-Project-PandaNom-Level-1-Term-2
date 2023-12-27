@@ -1,0 +1,35 @@
+/* Apply styles to the root alert dialog */
+.dialog-pane {
+    -fx-background-color: #ffbcd8; /* Orange background color */
+}
+
+/* Customize the alert title */
+.dialog-pane .alert .header-panel {
+    -fx-background-color: #D70F64; /* header background color */
+    -fx-font-size: 18px; /* Title font size */
+    -fx-text-fill: white; /* Title text color */
+}
+
+/* Customize the alert content */
+.dialog-pane .alert .content-panel {
+    -fx-font-size: 16px; /* Content font size */
+    -fx-text-fill: black; /* Content text color */
+}
+
+/* Style the alert buttons */
+.dialog-pane .alert .button-bar .button {
+    -fx-background-color: #FF5733; /* Orange button background color */
+    -fx-font-size: 14px; /* Button font size */
+    -fx-text-fill: white; /* Button text color */
+}
+
+/* Style the alert buttons on hover */
+.dialog-pane .alert .button-bar .button:hover {
+    -fx-background-color: #FF814A; /* Lighter orange on hover */
+}
+
+.dialog-pane .button:hover{     
+    -fx-background-color:white;
+    -fx-text-fill:#D70F64;
+    -fx-font-weight:bold; 
+   }

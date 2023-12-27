@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Restaurant.MenuController">
+   <children>
+      <AnchorPane layoutX="48.0" layoutY="111.0" prefHeight="300.0" prefWidth="504.0" style="-fx-background-color: #D70F64;">
+         <children>
+            <ScrollPane layoutX="18.0" layoutY="21.0" prefHeight="257.0" prefWidth="467.0">
+               <content>
+                  <VBox fx:id="menuVbox" prefHeight="265.0" prefWidth="465.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="237.0" layoutY="23.0" text="MENU" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Demi" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="back" fitHeight="51.0" fitWidth="57.0" layoutX="48.0" layoutY="21.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="msg" layoutX="192.0" layoutY="72.0" text="Total Food Items:" textFill="#d70f64">
+         <font>
+            <Font name="Yu Gothic Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

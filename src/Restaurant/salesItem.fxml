@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="120.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Restaurant.salesItemController">
+   <children>
+      <HBox prefHeight="80.0" prefWidth="465.0">
+         <children>
+            <Label fx:id="name" prefHeight="45.0" prefWidth="463.0" style="-fx-background-color: #000000;" text="Username:" textFill="#d70f64">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="465.0">
+         <children>
+            <Label fx:id="time" prefHeight="20.0" prefWidth="465.0" style="-fx-background-color: #fae6f2;" text="Order Time:">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane prefHeight="91.0" prefWidth="442.0" style="-fx-background-color: #fae6f2;">
+         <content>
+            <Label fx:id="info" text="Label">
+               <font>
+                  <Font name="YouYuan" size="15.0" />
+               </font>
+            </Label>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>
